@@ -46,7 +46,12 @@ syn match pandocTitleBlock /\%^\(%.*\n\)\{1,3}$/ skipnl
 """""""""""""""""""""""""""""""""""""""""""""
 " Header:
 "
-syn match pandocAtxHeader /^\s*#\{1,6}.*\n/ contains=pandocEmphasis
+syn match pandocAtxHeader /^\s*#\{1}.*\n/ contains=pandocEmphasis
+syn match pandocAtxHeader2 /^\s*#\{2}.*\n/ contains=pandocEmphasis
+syn match pandocAtxHeader3 /^\s*#\{3}.*\n/ contains=pandocEmphasis
+syn match pandocAtxHeader4 /^\s*#\{4}.*\n/ contains=pandocEmphasis
+syn match pandocAtxHeader5 /^\s*#\{5}.*\n/ contains=pandocEmphasis
+syn match pandocAtxHeader6 /^\s*#\{6}.*\n/ contains=pandocEmphasis
 syn match pandocSetexHeader /^.\+\n[=]\+$/
 syn match pandocSetexHeader /^.\+\n[-]\+$/
 
@@ -195,6 +200,11 @@ syn match pandocNewLine /\(  \|\\\)$/
 """""""""""""""""""""""""""""""""""""""""""""""
 hi link pandocTitleBlock Directory
 hi link pandocAtxHeader Title
+hi link pandocAtxHeader2 Type
+hi link pandocAtxHeader3 Identifier
+hi link pandocAtxHeader4 Title
+hi link pandocAtxHeader5 Title
+hi link pandocAtxHeader6 Title
 hi link pandocSetexHeader Title
 
 hi link pandocBlockQuote Comment
