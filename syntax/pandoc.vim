@@ -205,9 +205,9 @@ hi link pandocAtxHeader Title
 hi link pandocAtxHeader2 Type
 hi link pandocAtxHeader3 Identifier
 hi link pandocAtxHeader4 Title
-hi link pandocAtxHeader5 Title
-hi link pandocAtxHeader6 Title
-hi link pandocSetexHeader Title
+hi link pandocAtxHeader5 Operator
+hi link pandocAtxHeader6 Comment
+hi link pandocSetexHeader Underlined
 
 hi link pandocBlockQuote Comment
 hi link pandocCodeBlock String
